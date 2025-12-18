@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: 3dgamewebsite
+    build: .
+    ports:
+      - "5173:5173"
+    restart: always
+    environment:
+      - NODE_ENV=development
